@@ -1,0 +1,68 @@
+﻿@model IEnumerable<CommunityAssist2017MVC.Models.NewPerson>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<p>@Html.ActionLink("Registar", "Register")</p>
+<div class="row">
+
+  
+
+    <table class="table">
+
+        <tr>
+
+            <th>@Html.DisplayNameFor(model => model.LastName)</th>
+
+            <th>@Html.DisplayNameFor(model => model.FirstName)</th>
+
+            <th>@Html.DisplayNameFor(model => model.Email)</th>
+
+            <th>@Html.DisplayNameFor(model => model.PlainPassword)</th>
+
+            <th>@Html.DisplayNameFor(model => model.Apartment)</th>
+
+            <th>@Html.DisplayNameFor(model => model.Street)</th>
+
+            <th>@Html.DisplayNameFor(model => model.City)</th>
+
+            <th>@Html.DisplayNameFor(model => model.State)</th>
+
+            <th>@Html.DisplayNameFor(model => model.Zipcode)</th>
+
+            
+
+        </tr>
+
+        @foreach (var item in Model)
+
+        {
+
+        <tr>
+
+            <th>@Html.DisplayFor(model => item.LastName)</th>
+
+            <th>@Html.DisplayFor(model => item.FirstName)</th>
+
+            <th>@Html.DisplayFor(model => item.Email)</th>
+
+            <th>@Html.DisplayFor(model => item.PlainPassword)</th>
+
+            <th>@Html.DisplayFor(model => item.Apartment)</th>
+
+            <th>@Html.DisplayFor(model => item.Street)</th>
+
+            <th>@Html.DisplayFor(model => item.City)</th>
+
+            <th>@Html.DisplayFor(model => item.State)</th>
+
+            <th>@Html.DisplayFor(model => item.Zipcode)</th>
+
+        </tr>
+
+        }
+
+    </table>
+
+</div>
